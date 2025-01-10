@@ -40,8 +40,8 @@ namespace pee
 
         // Operations
         double dot(Vector3 &other) const;
-        Vector3& cross(Vector3 &other) const;
-        Vector3& unitVector(Vector3 &other) const;
+        Vector3 cross(Vector3 &other) const;
+        Vector3 unitVector(Vector3 &other) const;
         void normalize();
 
         // Operator Overloads
@@ -54,10 +54,16 @@ namespace pee
         double operator*(Vector3 &other) const { return this->dot(other); } // Dot product
         Vector3& operator%(Vector3 &other) const { return this->cross(other); } // Cross product
 
+        void operator=(Vector3 &other) const;
+
+        // TODO: Boolean operators
+
     protected:
         double *_x;
         double *_y;
         double *_z;
+
+        Vector3 cross(Vector3 &other);
     };
 
 
