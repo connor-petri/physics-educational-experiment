@@ -2,11 +2,10 @@
 // Created by Connor Petri on 1/9/25.
 //
 
-#include "Vectors.h"
+#include "Vector3.h"
 #include <cmath>
 
 using pee::Vector3;
-using pee::Vector2;
 
 Vector3::Vector3(double x, double y, double z) {
     *this->_x = x;
@@ -57,7 +56,7 @@ double Vector3::angleBeta() const {
     return acos(*this->_y / this->magnitude());
 }
 
-double Vector3::angleBetaDeg() {
+double Vector3::angleBetaDeg() const {
     return this->angleBeta() / M_2_PI * 360;
 }
 

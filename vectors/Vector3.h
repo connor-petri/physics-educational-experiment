@@ -3,8 +3,8 @@
 // Physics Educational Experiment
 //
 
-#ifndef PHYSICS_EDUCATIONAL_EXPERIMENT_VECTORS_H
-#define PHYSICS_EDUCATIONAL_EXPERIMENT_VECTORS_H
+#ifndef PHYSICS_EDUCATIONAL_EXPERIMENT_VECTOR3_H
+#define PHYSICS_EDUCATIONAL_EXPERIMENT_VECTOR3_H
 
 namespace pee
 {
@@ -27,7 +27,7 @@ namespace pee
         double angleAlpha() const; // Angle alpha in radians
         double angleAlphaDeg() const; // Angle alpha in degrees
         double angleBeta() const; // Angle beta in radians
-        double angleBetaDeg(); // Angle Beta in Degrees
+        double angleBetaDeg() const; // Angle Beta in Degrees
         virtual double angleGamma() const; // Angle gamma in radians
         virtual double angleGammaDeg() const; // Angle gamma in degrees
 
@@ -51,8 +51,8 @@ namespace pee
         Vector3 operator*(double other) const; // Scalar Multiplication
         Vector3 operator*(int other) const; // Scalar Multiplication
 
-        double operator*(const Vector3 &other) const { return this->dot(other); } // Dot product
-        Vector3 operator%(const Vector3 &other) const { return this->cross(other); } // Cross product
+        double operator*(const Vector3 &other) const; // Dot product
+        Vector3 operator%(const Vector3 &other) const; // Cross product
 
         Vector3 operator/(double other) const; // Scalar Division
         Vector3 operator/(int other) const; // Scalar Division
@@ -68,4 +68,4 @@ namespace pee
     };
 }
 
-#endif //PHYSICS_EDUCATIONAL_EXPERIMENT_VECTORS_H
+#endif //PHYSICS_EDUCATIONAL_EXPERIMENT_VECTOR3_H

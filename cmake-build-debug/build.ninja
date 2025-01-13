@@ -52,11 +52,11 @@ build CMakeFiles/physics_educational_experiment.dir/main.cpp.o: CXX_COMPILER__ph
   OBJECT_DIR = CMakeFiles/physics_educational_experiment.dir
   OBJECT_FILE_DIR = CMakeFiles/physics_educational_experiment.dir
 
-build CMakeFiles/physics_educational_experiment.dir/Vectors.cpp.o: CXX_COMPILER__physics_educational_experiment_Debug /Users/connor/Projects/physics-educational-experiment/Vectors.cpp || cmake_object_order_depends_target_physics_educational_experiment
-  DEP_FILE = CMakeFiles/physics_educational_experiment.dir/Vectors.cpp.o.d
+build CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.o: CXX_COMPILER__physics_educational_experiment_Debug /Users/connor/Projects/physics-educational-experiment/vectors/Vector3.cpp || cmake_object_order_depends_target_physics_educational_experiment
+  DEP_FILE = CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/physics_educational_experiment.dir
-  OBJECT_FILE_DIR = CMakeFiles/physics_educational_experiment.dir
+  OBJECT_FILE_DIR = CMakeFiles/physics_educational_experiment.dir/vectors
 
 
 # =============================================================================
@@ -66,7 +66,7 @@ build CMakeFiles/physics_educational_experiment.dir/Vectors.cpp.o: CXX_COMPILER_
 #############################################
 # Link the executable physics_educational_experiment
 
-build physics_educational_experiment: CXX_EXECUTABLE_LINKER__physics_educational_experiment_Debug CMakeFiles/physics_educational_experiment.dir/main.cpp.o CMakeFiles/physics_educational_experiment.dir/Vectors.cpp.o
+build physics_educational_experiment: CXX_EXECUTABLE_LINKER__physics_educational_experiment_Debug CMakeFiles/physics_educational_experiment.dir/main.cpp.o CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1
   OBJECT_DIR = CMakeFiles/physics_educational_experiment.dir
   POST_BUILD = :

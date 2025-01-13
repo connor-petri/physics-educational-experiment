@@ -1,0 +1,5 @@
+# ninja log v5
+0	66	1736730158878605465	build.ninja	a457a275d57860c1
+0	607	1736730159492329570	CMakeFiles/physics_educational_experiment.dir/main.cpp.o	893b4d43971e3d16
+7	197	1736730383459653058	CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.o	69aba94fb57dd2e
+197	328	1736730383591434265	physics_educational_experiment	c3e242ca4d881f4a
