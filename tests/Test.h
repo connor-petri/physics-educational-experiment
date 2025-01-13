@@ -49,7 +49,7 @@ namespace peeTest {
         unsigned int id() { return this->_id; }
 
     protected:
-        unsigned int _id;
+        unsigned int _id{};
         static unsigned int _next_id;
 
         TFunction _func;
