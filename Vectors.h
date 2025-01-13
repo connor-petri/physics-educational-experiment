@@ -39,22 +39,25 @@ namespace pee
         double angleZDeg() const { return this->angleGammaDeg(); } // Angle from the positive z-axis in degrees
 
         // Operations
-        double dot(Vector3 &other) const;
-        Vector3 cross(Vector3 &other) const;
-        Vector3 unitVector(Vector3 &other) const;
-        void normalize();
+        double dot(const Vector3 &other) const;
+        Vector3 cross(const Vector3 &other) const;
+        Vector3 unitVector() const; // returns a unit vector in the direction of this one
+        void normalize(); // normalizes this vector
 
         // Operator Overloads
-        Vector3& operator+(Vector3 &other) const;
-        Vector3& operator-(Vector3 &other) const;
+        Vector3 operator+(const Vector3 &other) const;
+        Vector3 operator-(const Vector3 &other) const;
 
-        Vector3& operator*(int other) const; // Scalar Multiplication
-        Vector3& operator*(double other) const;
+        Vector3 operator*(double other) const; // Scalar Multiplication
+        Vector3 operator*(int other) const; // Scalar Multiplication
 
-        double operator*(Vector3 &other) const { return this->dot(other); } // Dot product
-        Vector3& operator%(Vector3 &other) const { return this->cross(other); } // Cross product
+        double operator*(const Vector3 &other) const { return this->dot(other); } // Dot product
+        Vector3 operator%(const Vector3 &other) const { return this->cross(other); } // Cross product
 
-        void operator=(Vector3 &other) const;
+        Vector3 operator/(double other) const; // Scalar Division
+        Vector3 operator/(int other) const; // Scalar Division
+
+        Vector3& operator=(const Vector3 &other);
 
         // TODO: Boolean operators
 
@@ -62,26 +65,6 @@ namespace pee
         double *_x;
         double *_y;
         double *_z;
-
-        Vector3 cross(Vector3 &other);
-    };
-
-
-    class Vector2 : Vector3 {
-    public:
-        // Constructors
-        Vector2(double x, double y);
-        Vector2(int x, int y);
-
-        ~Vector2();
-
-        double z() const override;
-
-        double angleGamma() const override;
-        double angleGammaDeg() const override;
-
-    protected:
-        const double *_z;
     };
 }
 
