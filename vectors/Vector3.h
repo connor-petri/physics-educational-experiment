@@ -1,5 +1,5 @@
 //
-// Copywrite 2025 Connor Petri <conn.petri@gmail.com>
+// Copyright 2025 Connor Petri <conn.petri@gmail.com>
 // Physics Educational Experiment
 //
 
@@ -23,6 +23,7 @@ namespace pee
         double magnitude() const;
         double mag() const { return this->magnitude(); }
 
+        // TODO: Account for the range of the arccos function in the angle methods
         // Angles
         double angleAlpha() const; // Angle alpha in radians
         double angleAlphaDeg() const; // Angle alpha in degrees
@@ -35,8 +36,8 @@ namespace pee
         double angleXDeg() const { return this->angleAlphaDeg(); } // Angle from the positive x-axis in degrees
         double angleY() const { return this->angleBeta(); } // Angle from the positive y-axis in radians
         double angleYDeg() const { return this->angleBetaDeg(); } // Angle from the positive y-axis in degrees
-        double angleZ() const { return this->angleGamma(); } // Angle from the positive z-axis in radians
-        double angleZDeg() const { return this->angleGammaDeg(); } // Angle from the positive z-axis in degrees
+        virtual double angleZ() const { return this->angleGamma(); } // Angle from the positive z-axis in radians
+        virtual double angleZDeg() const { return this->angleGammaDeg(); } // Angle from the positive z-axis in degrees
 
         // Operations
         double dot(const Vector3 &other) const;
