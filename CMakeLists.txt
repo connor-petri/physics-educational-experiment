@@ -3,8 +3,4 @@ project(physics_educational_experiment)
 
 set(CMAKE_CXX_STANDARD 23)
 
-<<<<<<< HEAD
-add_executable(physics_educational_experiment main.cpp vectors/Vector3.cpp vectors/Vector3.h vectors/Vector2.cpp vectors/Vector2.h)
-=======
 add_executable(physics_educational_experiment main.cpp vectors/Vector3.cpp vectors/Vector3.h tests/Test.h)
->>>>>>> tests
