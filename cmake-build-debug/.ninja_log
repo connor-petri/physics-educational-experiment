@@ -1,5 +1,26 @@
 # ninja log v5
+<<<<<<< HEAD
 0	66	1736745915055617829	build.ninja	a457a275d57860c1
 197	328	1736730383591434265	physics_educational_experiment	c3e242ca4d881f4a
 0	607	1736730159492329570	CMakeFiles/physics_educational_experiment.dir/main.cpp.o	893b4d43971e3d16
 7	197	1736730383459653058	CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.o	69aba94fb57dd2e
+=======
+0	66	1736743558569857179	build.ninja	a457a275d57860c1
+389	432	1736741391135669609	physics_educational_experiment	d6484f723c069ef8
+3	524	1736743535333534141	CMakeFiles/physics_educational_experiment.dir/main.cpp.o	893b4d43971e3d16
+4	243	1736741383714643117	CMakeFiles/physics_educational_experiment.dir/tests/Test.cpp.o	49b4537682e45f85
+4	237	1736741383708331886	CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.o	69aba94fb57dd2e
+12	137	1736743560340051152	physics_educational_experiment	c3e242ca4d881f4a
+3	692	1736744422948489043	CMakeFiles/physics_educational_experiment.dir/main.cpp.o	893b4d43971e3d16
+692	804	1736744423062851727	physics_educational_experiment	c3e242ca4d881f4a
+19	666	1736744585600558672	CMakeFiles/physics_educational_experiment.dir/main.cpp.o	893b4d43971e3d16
+666	778	1736744585714352312	physics_educational_experiment	c3e242ca4d881f4a
+12	429	1736744936246994625	CMakeFiles/physics_educational_experiment.dir/main.cpp.o	893b4d43971e3d16
+429	537	1736744936356611063	physics_educational_experiment	c3e242ca4d881f4a
+2	741	1736745522678044328	CMakeFiles/physics_educational_experiment.dir/main.cpp.o	893b4d43971e3d16
+741	868	1736745522807406048	physics_educational_experiment	c3e242ca4d881f4a
+3	505	1736745716695602738	CMakeFiles/physics_educational_experiment.dir/main.cpp.o	893b4d43971e3d16
+505	613	1736745716804430092	physics_educational_experiment	c3e242ca4d881f4a
+3	469	1736745738464580135	CMakeFiles/physics_educational_experiment.dir/main.cpp.o	893b4d43971e3d16
+469	511	1736745738509393506	physics_educational_experiment	c3e242ca4d881f4a
+>>>>>>> tests
