@@ -143,3 +143,12 @@ Vector3& Vector3::operator=(const Vector3 &other) {
 
     return *this;
 }
+
+// Boolean Operators
+bool Vector3::operator==(const Vector3 &other) const {
+    return *this->_x == other.x() && *this->_y == other.y() && *this->_z == other.z();
+}
+
+bool Vector3::operator!=(const Vector3 &other) const {
+    return !this->operator==(other);
+}

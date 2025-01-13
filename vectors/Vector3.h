@@ -59,7 +59,10 @@ namespace pee
 
         Vector3& operator=(const Vector3 &other);
 
-        // TODO: Boolean operators
+        // Boolean Operator Overloads
+        bool operator==(const Vector3 &other) const;
+        bool operator!=(const Vector3 &other) const;
+
 
     protected:
         double *_x;
