@@ -2,4 +2,3 @@
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/connor/Projects/physics-educational-experiment/cmake-build-debug
-CMake File API: /Users/connor/Projects/physics-educational-experiment/cmake-build-debug: failed to load from '/Users/connor/Projects/physics-educational-experiment/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-dfc9f0fb8283146afecb.json'

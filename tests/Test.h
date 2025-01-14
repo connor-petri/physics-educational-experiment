@@ -5,8 +5,10 @@
 #ifndef PHYSICS_EDUCATIONAL_EXPERIMENT_TEST_H
 #define PHYSICS_EDUCATIONAL_EXPERIMENT_TEST_H
 
+#include <iostream>
 #include <tuple>
 #include <utility>
+#include "ITest.h"
 
 #define RED     "\033[31m"      /* Red */
 #define GREEN   "\033[32m"      /* Green */
@@ -14,21 +16,15 @@
 
 namespace peeTest {
 
-    enum Status {
-        NONE,
-        SUCCESS,
-        FAILURE
-    };
-
     template <typename TOutput, typename TFunction, typename... Inputs>
-    class Test {
+    class Test : public ITest {
     public:
         Test(TOutput expectedOutput, TFunction function, Inputs... inputs)
         : _func(function), _expectedOutput(expectedOutput), _inputs(std::make_tuple(inputs...)) {
             this->_id = this->_next_id++;
         }
 
-        Status run() {
+        Status run() override {
             std::cout << BLUE << "Running Test " << this->_id << "...\n";
 
             TOutput result = std::apply(_func, _inputs);

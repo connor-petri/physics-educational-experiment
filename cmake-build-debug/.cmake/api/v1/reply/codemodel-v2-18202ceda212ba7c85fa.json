@@ -39,11 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "physics_educational_experiment::@6890427a1f51a3e7e1df",
-<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-244b456109de3c946548.json
-					"jsonFile" : "target-physics_educational_experiment-Debug-d581b225dbffe34c0f82.json",
-========
-					"jsonFile" : "target-physics_educational_experiment-Debug-f7276449d6c906b190fa.json",
->>>>>>>> tests:cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-dfc9f0fb8283146afecb.json
+					"jsonFile" : "target-physics_educational_experiment-Debug-46bf41452f94b1d28964.json",
 					"name" : "physics_educational_experiment",
 					"projectIndex" : 0
 				}
