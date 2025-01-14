@@ -1,9 +1,7 @@
 //
 // Created by Connor Petri on 1/14/25.
 //
-
-#ifndef PHYSICS_EDUCATIONAL_EXPERIMENT_ITEST_H
-#define PHYSICS_EDUCATIONAL_EXPERIMENT_ITEST_H
+#pragma once
 
 namespace peeTest
 {
@@ -22,4 +20,3 @@ namespace peeTest
 
 } // peeTest
 
-#endif //PHYSICS_EDUCATIONAL_EXPERIMENT_ITEST_H

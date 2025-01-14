@@ -3,8 +3,7 @@
 // Physics Educational Experiment
 //
 
-#ifndef PHYSICS_EDUCATIONAL_EXPERIMENT_VECTOR3_H
-#define PHYSICS_EDUCATIONAL_EXPERIMENT_VECTOR3_H
+#pragma once
 
 namespace pee
 {
@@ -71,5 +70,3 @@ namespace pee
         double *_z;
     };
 }
-
-#endif //PHYSICS_EDUCATIONAL_EXPERIMENT_VECTOR3_H

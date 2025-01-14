@@ -2,8 +2,7 @@
 // Created by Connor Petri on 1/12/25.
 //
 
-#ifndef PHYSICS_EDUCATIONAL_EXPERIMENT_TEST_H
-#define PHYSICS_EDUCATIONAL_EXPERIMENT_TEST_H
+#pragma once
 
 #include <iostream>
 #include <tuple>
@@ -57,6 +56,3 @@ namespace peeTest {
     unsigned int Test<TFunction, TOutput, Inputs...>::_next_id = 0;
 
 }
-
-
-#endif //PHYSICS_EDUCATIONAL_EXPERIMENT_TEST_H

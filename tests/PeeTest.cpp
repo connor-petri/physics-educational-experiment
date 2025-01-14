@@ -16,4 +16,7 @@ namespace peeTest {
 
         return Status::SUCCESS;
     }
+
+    std::vector<ITest*>* PeeTest::_tests = new std::vector<ITest*>;
+
 }

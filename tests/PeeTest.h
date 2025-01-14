@@ -2,11 +2,10 @@
 // Created by Connor Petri on 1/14/25.
 //
 
-#ifndef PHYSICS_EDUCATIONAL_EXPERIMENT_PEETEST_H
-#define PHYSICS_EDUCATIONAL_EXPERIMENT_PEETEST_H
+#pragma once
 
 #include <vector>
-#include "Test.h"
+#include "ITest.h"
 
 namespace peeTest
 {
@@ -22,9 +21,5 @@ namespace peeTest
         static std::vector<ITest*> *_tests;
     };
 
-    // TODO: Fix circular import
-    std::vector<ITest*>* PeeTest::_tests = new std::vector<ITest*>;
-
 } // peeTest
 
-#endif //PHYSICS_EDUCATIONAL_EXPERIMENT_PEETEST_H

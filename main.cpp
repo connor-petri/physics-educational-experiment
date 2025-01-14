@@ -1,6 +1,7 @@
 #include <iostream>
 
 #include "tests/PeeTest.h"
+#include "tests/Test.h"
 #include <vector>
 
 int add(int x, int y) {
