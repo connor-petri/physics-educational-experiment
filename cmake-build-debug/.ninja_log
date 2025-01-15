@@ -3,5 +3,9 @@
 3	577	1736909565100042519	CMakeFiles/physics_educational_experiment.dir/tests/PeeTest.cpp.o	39e13a1531c7c5e2
 3	576	1736909565097160047	CMakeFiles/physics_educational_experiment.dir/main.cpp.o	893b4d43971e3d16
 4	243	1736741383714643117	CMakeFiles/physics_educational_experiment.dir/tests/Test.cpp.o	49b4537682e45f85
-0	66	1736910120977075456	build.ninja	a457a275d57860c1
+0	66	1736911075437386058	build.ninja	a457a275d57860c1
 4	238	1736891814142742307	CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.o	69aba94fb57dd2e
+0	208	1736911134886502329	CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.o	69aba94fb57dd2e
+0	537	1736911135215941835	CMakeFiles/physics_educational_experiment.dir/main.cpp.o	893b4d43971e3d16
+0	544	1736911135223791064	CMakeFiles/physics_educational_experiment.dir/tests/PeeTest.cpp.o	39e13a1531c7c5e2
+545	650	1736911135329787563	physics_educational_experiment	78d41235dff69080
