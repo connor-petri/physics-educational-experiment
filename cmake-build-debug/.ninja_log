@@ -1,23 +1,7 @@
 # ninja log v5
-0	66	1736852166487289463	build.ninja	a457a275d57860c1
-508	615	1736749119131781368	physics_educational_experiment	c3e242ca4d881f4a
-1	755	1736852026053209504	CMakeFiles/physics_educational_experiment.dir/main.cpp.o	893b4d43971e3d16
+577	698	1736909565220916171	physics_educational_experiment	78d41235dff69080
+3	577	1736909565100042519	CMakeFiles/physics_educational_experiment.dir/tests/PeeTest.cpp.o	39e13a1531c7c5e2
+3	576	1736909565097160047	CMakeFiles/physics_educational_experiment.dir/main.cpp.o	893b4d43971e3d16
 4	243	1736741383714643117	CMakeFiles/physics_educational_experiment.dir/tests/Test.cpp.o	49b4537682e45f85
-1	301	1736852025600617719	CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.o	69aba94fb57dd2e
-11	383	1736852170163098338	CMakeFiles/physics_educational_experiment.dir/tests/PeeTest.cpp.o	39e13a1531c7c5e2
-3	610	1736852398260208556	CMakeFiles/physics_educational_experiment.dir/main.cpp.o	893b4d43971e3d16
-3	596	1736853015255291071	CMakeFiles/physics_educational_experiment.dir/main.cpp.o	893b4d43971e3d16
-4	478	1736853064295347006	CMakeFiles/physics_educational_experiment.dir/main.cpp.o	893b4d43971e3d16
-4	483	1736853064301261973	CMakeFiles/physics_educational_experiment.dir/tests/PeeTest.cpp.o	39e13a1531c7c5e2
-3	518	1736853091424836258	CMakeFiles/physics_educational_experiment.dir/tests/PeeTest.cpp.o	39e13a1531c7c5e2
+0	66	1736910120977075456	build.ninja	a457a275d57860c1
 4	238	1736891814142742307	CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.o	69aba94fb57dd2e
-3	552	1736891814455553323	CMakeFiles/physics_educational_experiment.dir/main.cpp.o	893b4d43971e3d16
-4	559	1736891814462918259	CMakeFiles/physics_educational_experiment.dir/tests/PeeTest.cpp.o	39e13a1531c7c5e2
-4	512	1736891887569450089	CMakeFiles/physics_educational_experiment.dir/tests/PeeTest.cpp.o	39e13a1531c7c5e2
-3	528	1736891978387927755	CMakeFiles/physics_educational_experiment.dir/main.cpp.o	893b4d43971e3d16
-4	509	1736892073780861678	CMakeFiles/physics_educational_experiment.dir/tests/PeeTest.cpp.o	39e13a1531c7c5e2
-3	596	1736892073867705791	CMakeFiles/physics_educational_experiment.dir/main.cpp.o	893b4d43971e3d16
-596	716	1736892073988213470	physics_educational_experiment	78d41235dff69080
-13	515	1736903042687911137	CMakeFiles/physics_educational_experiment.dir/main.cpp.o	893b4d43971e3d16
-13	518	1736903042691190809	CMakeFiles/physics_educational_experiment.dir/tests/PeeTest.cpp.o	39e13a1531c7c5e2
-518	666	1736903042839481842	physics_educational_experiment	78d41235dff69080

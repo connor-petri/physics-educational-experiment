@@ -21,28 +21,26 @@ namespace peeTest
         FAILURE = 2
     };
 
+
     class ITest // Test interface to represent generic Tests independent of template types
     {
     public:
         virtual Status run() = 0;
     };
 
+
     template <typename TOutput, typename TFunction, typename... Inputs>
     class Test : public ITest {
     public:
         Test(TOutput expectedOutput, TFunction function, Inputs... inputs)
-                : _func(function), _expectedOutput(expectedOutput), _inputs(std::make_tuple(inputs...)) {
-            this->_id = this->_next_id++;
-        }
+                : _id(this->_next_id++), _func(function), _expectedOutput(expectedOutput), _inputs(std::make_tuple(inputs...)) {}
 
         Status run() override {
             std::cout << BLUE << "Running Test " << this->_id << "...\n";
 
             TOutput result = std::apply(_func, _inputs);
 
-            Status status = result == _expectedOutput ? Status::SUCCESS : Status::FAILURE;
-
-            if (status == Status::FAILURE) {
+            if (result != _expectedOutput) {
                 std::cout   << RED << "Test " << this->_id << " failed -> Returned: "
                             << result << " Expected: " << this->_expectedOutput << std::endl;
 
@@ -67,12 +65,13 @@ namespace peeTest
     template <typename TFunction, typename TOutput, typename... Inputs>
     unsigned int Test<TFunction, TOutput, Inputs...>::_next_id = 0;
 
+
     class PeeTest
     {
     public:
-        static void add(ITest* test);
+        static void add(ITest *test);
 
-        static Status runall();
+        static void runall();
 
     private:
         static std::vector<ITest*> *_tests;
