@@ -1,33 +1,24 @@
 //
-// Created by Connor Petri on 1/14/25.
+// Created by Connor Petri on 1/17/25.
 //
 
-#pragma once
+#ifndef PHYSICS_EDUCATIONAL_EXPERIMENT_TEST_H
+#define PHYSICS_EDUCATIONAL_EXPERIMENT_TEST_H
 
-#include <vector>
 #include <iostream>
+#include "Result.h"
 
 #define RED     "\033[31m"      /* Red */
 #define GREEN   "\033[32m"      /* Green */
 #define BLUE    "\033[34m"      /* Blue */
 
-namespace peeTest
-{
-
-    enum Status {
-        ERROR = -1,
-        NONE = 0,
-        SUCCESS  = 1,
-        FAILURE = 2
-    };
-
+namespace peeTest {
 
     class ITest // Test interface to represent generic Tests independent of template types
     {
     public:
-        virtual Status run() = 0;
+        virtual Result run() = 0;
     };
-
 
     template <typename TOutput, typename TFunction, typename... Inputs>
     class Test : public ITest {
@@ -35,7 +26,7 @@ namespace peeTest
         Test(TOutput expectedOutput, TFunction function, Inputs... inputs)
                 : _id(this->_next_id++), _func(function), _expectedOutput(expectedOutput), _inputs(std::make_tuple(inputs...)) {}
 
-        Status run() override {
+        Result run() override {
             std::cout << BLUE << "Running Test " << this->_id << "...\n";
 
             TOutput result = std::apply(_func, _inputs);
@@ -44,11 +35,11 @@ namespace peeTest
                 std::cout   << RED << "Test " << this->_id << " failed -> Returned: "
                             << result << " Expected: " << this->_expectedOutput << std::endl;
 
-                return Status::FAILURE;
+                return Result(Status::FAILURE);
             }
 
             std::cout << GREEN << "Test " << this->_id << " was successful." << std::endl;
-            return Status::SUCCESS;
+            return Result(Status::SUCCESS);
         }
 
         unsigned int id() { return this->_id; }
@@ -65,17 +56,7 @@ namespace peeTest
     template <typename TFunction, typename TOutput, typename... Inputs>
     unsigned int Test<TFunction, TOutput, Inputs...>::_next_id = 0;
 
+}
 
-    class PeeTest
-    {
-    public:
-        static void add(ITest *test);
 
-        static void runall();
-
-    private:
-        static std::vector<ITest*> *_tests;
-    };
-
-} // peeTest
-
+#endif //PHYSICS_EDUCATIONAL_EXPERIMENT_TEST_H
