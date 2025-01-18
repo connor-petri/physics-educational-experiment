@@ -11,17 +11,15 @@ namespace peeTest
 {
 
     enum Status {
-        ERROR = -1,
-        NONE = 0,
-        SUCCESS  = 1,
-        FAILURE = 2
+        SUCCESS,
+        FAILURE,
+        ERROR
     };
 
     class Result {
     public:
         explicit Result(const Status &status);
         Result(const Status &status, const std::string &details);
-        Result();
 
         ~Result();
 

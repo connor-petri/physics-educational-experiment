@@ -16,10 +16,6 @@ namespace peeTest
         *this->_details = details;
     }
 
-    Result::Result() {
-        *this->_status = Status::NONE;
-    }
-
     Result::~Result() {
         delete this->_status;
         delete this->_details;

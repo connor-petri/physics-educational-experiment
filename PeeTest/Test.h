@@ -6,6 +6,7 @@
 #define PHYSICS_EDUCATIONAL_EXPERIMENT_TEST_H
 
 #include <iostream>
+#include <string>
 #include "Result.h"
 
 #define RED     "\033[31m"      /* Red */
@@ -18,6 +19,7 @@ namespace peeTest {
     {
     public:
         virtual Result run() = 0;
+        virtual unsigned int id() = 0;
     };
 
     template <typename TOutput, typename TFunction, typename... Inputs>
@@ -27,22 +29,17 @@ namespace peeTest {
                 : _id(this->_next_id++), _func(function), _expectedOutput(expectedOutput), _inputs(std::make_tuple(inputs...)) {}
 
         Result run() override {
-            std::cout << BLUE << "Running Test " << this->_id << "...\n";
-
             TOutput result = std::apply(_func, _inputs);
 
             if (result != _expectedOutput) {
-                std::cout   << RED << "Test " << this->_id << " failed -> Returned: "
-                            << result << " Expected: " << this->_expectedOutput << std::endl;
-
-                return Result(Status::FAILURE);
+                std::string details = "ERROR_DETAILS";
+                return Result(Status::FAILURE, details);
             }
 
-            std::cout << GREEN << "Test " << this->_id << " was successful." << std::endl;
             return Result(Status::SUCCESS);
         }
 
-        unsigned int id() { return this->_id; }
+        unsigned int id() override { return this->_id; }
 
     protected:
         unsigned int _id{};
