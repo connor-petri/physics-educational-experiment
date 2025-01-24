@@ -8,24 +8,23 @@
 #include <iostream>
 
 #include "Result.h"
-#include "Test.h"
+#include "TestCase.h"
 
 namespace peeTest
 {
 
     enum Status;
     class Result;
-    class ITest;
 
     class PeeTest
     {
     public:
-        static void add(ITest *test);
+        static void add(TestCase *test);
 
         static void runall();
 
     private:
-        static std::vector<ITest*> *_tests;
+        static std::vector<TestCase*> *_tests;
     };
 
 } // peeTest

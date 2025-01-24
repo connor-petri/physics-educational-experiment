@@ -10,12 +10,12 @@
 
 namespace peeTest {
 
-    void PeeTest::add(ITest *test) {
+    void PeeTest::add(TestCase *test) {
         PeeTest::_tests->push_back(test);
     }
 
     void PeeTest::runall() {
-        for (ITest *test : *PeeTest::_tests) {
+        for (TestCase *test : *PeeTest::_tests) {
             std::cout << BLUE << "Running Test " << test->id() << "...\n";
 
             Result r = test->run();
@@ -31,6 +31,6 @@ namespace peeTest {
         }
     }
 
-    std::vector<ITest*> * PeeTest::_tests = new std::vector<ITest*>;
+    std::vector<TestCase*> * PeeTest::_tests = new std::vector<TestCase*>;
 
 }

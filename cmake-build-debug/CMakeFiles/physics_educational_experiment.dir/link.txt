@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/physics_educational_experiment.dir/main.cpp.o CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.o CMakeFiles/physics_educational_experiment.dir/PeeTest/PeeTest.cpp.o CMakeFiles/physics_educational_experiment.dir/PeeTest/Result.cpp.o CMakeFiles/physics_educational_experiment.dir/PeeTest/TestCase.cpp.o -o physics_educational_experiment

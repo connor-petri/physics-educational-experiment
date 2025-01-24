@@ -24,7 +24,7 @@ namespace peeTest
         ~Result();
 
         const Status status() const { return *this->_status; }
-        const void Status(const Status &status) { *this->_status = status; }
+        const void status(const Status &status) { *this->_status = status; }
 
         const std::string & details() const { return *this->_details; }
 
