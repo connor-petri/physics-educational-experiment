@@ -11,7 +11,7 @@ namespace pee {
 
     class Vector2 : public Vector3 {
     public:
-        explicit Vector2(double x = 0.0, double y = 0.0);
+        explicit Vector2(float x = 0.0, float y = 0.0);
         explicit Vector2(int x = 0, int y = 0);
 
         double z() override;

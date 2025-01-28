@@ -7,16 +7,16 @@
 
 using pee::Vector3;
 
-Vector3::Vector3(double x, double y, double z) {
+Vector3::Vector3(float x, float y, float z) {
     *this->_x = x;
     *this->_y = y;
     *this->_z = z;
 }
 
 Vector3::Vector3(int x, int y, int z) {
-    *this->_x = double(x);
-    *this->_y = double(y);
-    *this->_z = double(z);
+    *this->_x = float(x);
+    *this->_y = float(y);
+    *this->_z = float(z);
 }
 
 Vector3::~Vector3() {
@@ -26,50 +26,50 @@ Vector3::~Vector3() {
 }
 
 // Properties
-double Vector3::x() const {
+float Vector3::x() const {
     return *this->_x;
 }
 
-double Vector3::y() const {
+float Vector3::y() const {
     return *this->_y;
 }
 
-double Vector3::z() const {
+float Vector3::z() const {
     return *this->_z;
 }
 
-double Vector3::magnitude() const {
+float Vector3::magnitude() const {
     return sqrt(pow(*this->_x, 2) + pow(*this->_y, 2) + pow(*this->_z, 2));
 }
 
 // Angles
-double Vector3::angleAlpha() const {
+float Vector3::angleAlpha() const {
     return acos(*this->_x / this->magnitude());
 }
 
-double Vector3::angleAlphaDeg() const
+float Vector3::angleAlphaDeg() const
 {
     return this->angleAlpha() / M_2_PI * 360;
 }
 
-double Vector3::angleBeta() const {
+float Vector3::angleBeta() const {
     return acos(*this->_y / this->magnitude());
 }
 
-double Vector3::angleBetaDeg() const {
+float Vector3::angleBetaDeg() const {
     return this->angleBeta() / M_2_PI * 360;
 }
 
-double Vector3::angleGamma() const {
+float Vector3::angleGamma() const {
     return acos(*this->_z / this->magnitude());
 }
 
-double Vector3::angleGammaDeg() const {
+float Vector3::angleGammaDeg() const {
     return this->angleGamma() / M_2_PI * 360;
 }
 
 // Operations
-double Vector3::dot(const Vector3 &other) const {
+float Vector3::dot(const Vector3 &other) const {
     return *this->_x * other.x() + *this->_y * other.y() + *this->_z * other.z();
 }
 
@@ -107,7 +107,7 @@ Vector3 Vector3::operator-(const Vector3 &other) const {
                    *this->_z - other.z());
 }
 
-Vector3 Vector3::operator*(double other) const {
+Vector3 Vector3::operator*(float other) const {
     return Vector3(other * *this->_x,
                    other * *this->_y,
                    other * *this->_z);
@@ -117,7 +117,7 @@ Vector3 Vector3::operator*(int other) const {
     return this->operator*(double(other));
 }
 
-double Vector3::operator*(const Vector3 &other) const {
+float Vector3::operator*(const Vector3 &other) const {
     return this->dot(other);
 }
 
@@ -125,7 +125,7 @@ Vector3 Vector3::operator%(const Vector3 &other) const {
     return this->cross(other);
 }
 
-Vector3 Vector3::operator/(double other) const{
+Vector3 Vector3::operator/(float other) const{
     return this->operator*(1.0/other);
 }
 

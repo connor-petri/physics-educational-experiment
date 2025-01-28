@@ -9,6 +9,7 @@
 
 #include "Result.h"
 #include "TestCase.h"
+#include <cmath>
 
 namespace peeTest
 {
@@ -19,9 +20,11 @@ namespace peeTest
     class PeeTest
     {
     public:
+        // main functionality
         static void add(TestCase *test);
-
         static void runall();
+
+        // misc functions
 
     private:
         static std::vector<TestCase*> *_tests;
