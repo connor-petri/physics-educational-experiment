@@ -18,7 +18,7 @@ namespace pee
         // Properties
         float x() const;
         float y() const;
-        virtual double z() const;
+        virtual float z() const;
         float magnitude() const;
         float mag() const { return this->magnitude(); }
 
@@ -51,7 +51,7 @@ namespace pee
         Vector3 operator*(float other) const; // Scalar Multiplication
         Vector3 operator*(int other) const; // Scalar Multiplication
 
-        double operator*(const Vector3 &other) const; // Dot product
+        float operator*(const Vector3 &other) const; // Dot product
         Vector3 operator%(const Vector3 &other) const; // Cross product
 
         Vector3 operator/(float other) const; // Scalar Division

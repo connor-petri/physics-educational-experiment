@@ -22,7 +22,7 @@ namespace peeTest
     public:
         // main functionality
         static void add(TestCase *test);
-        static void runall();
+        static void runAll();
 
         // misc functions
 

@@ -30,5 +30,5 @@ int main()
     AddTest t4(2, 2, 4);
     AddTest t5(5, 5, 10);
 
-    peeTest::PeeTest::runall();
+    peeTest::PeeTest::runAll();
 }

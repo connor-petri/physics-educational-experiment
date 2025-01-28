@@ -15,7 +15,7 @@ namespace peeTest {
     }
 
 
-    void PeeTest::runall() {
+    void PeeTest::runAll() {
         for (TestCase *test : *PeeTest::_tests) {
             std::cout << BLUE << "Running Test " << test->id() << "...\n";
 

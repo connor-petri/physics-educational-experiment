@@ -39,7 +39,7 @@ float Vector3::z() const {
 }
 
 float Vector3::magnitude() const {
-    return sqrt(pow(*this->_x, 2) + pow(*this->_y, 2) + pow(*this->_z, 2));
+    return sqrt(pow(*this->_x, 2.0f) + pow(*this->_y, 2.0f) + pow(*this->_z, 2.0f));
 }
 
 // Angles
@@ -49,7 +49,7 @@ float Vector3::angleAlpha() const {
 
 float Vector3::angleAlphaDeg() const
 {
-    return this->angleAlpha() / M_2_PI * 360;
+    return this->angleAlpha() / float(M_2_PI) * 360.0f;
 }
 
 float Vector3::angleBeta() const {
@@ -57,7 +57,7 @@ float Vector3::angleBeta() const {
 }
 
 float Vector3::angleBetaDeg() const {
-    return this->angleBeta() / M_2_PI * 360;
+    return this->angleBeta() / float(M_2_PI) * 360;
 }
 
 float Vector3::angleGamma() const {
@@ -65,7 +65,7 @@ float Vector3::angleGamma() const {
 }
 
 float Vector3::angleGammaDeg() const {
-    return this->angleGamma() / M_2_PI * 360;
+    return this->angleGamma() / float(M_2_PI) * 360;
 }
 
 // Operations
@@ -74,9 +74,9 @@ float Vector3::dot(const Vector3 &other) const {
 }
 
 Vector3 Vector3::cross(const Vector3 &other) const {
-    double x = (*this->_y * other.z()) - (*this->_z * other.y());
-    double y = (*this->_z * other.x()) - (*this->_x * other.z());
-    double z = (*this->_z * other.y()) - (*this->_y * other.x());
+    float x = (*this->_y * other.z()) - (*this->_z * other.y());
+    float y = (*this->_z * other.x()) - (*this->_x * other.z());
+    float z = (*this->_z * other.y()) - (*this->_y * other.x());
 
     return Vector3(x, y, z);
 }
@@ -114,7 +114,7 @@ Vector3 Vector3::operator*(float other) const {
 }
 
 Vector3 Vector3::operator*(int other) const {
-    return this->operator*(double(other));
+    return this->operator*(float(other));
 }
 
 float Vector3::operator*(const Vector3 &other) const {
@@ -126,11 +126,11 @@ Vector3 Vector3::operator%(const Vector3 &other) const {
 }
 
 Vector3 Vector3::operator/(float other) const{
-    return this->operator*(1.0/other);
+    return this->operator*(1.0f/other);
 }
 
 Vector3 Vector3::operator/(int other) const {
-    return this->operator/(double(other));
+    return this->operator/(float(other));
 }
 
 // Assignment operator
