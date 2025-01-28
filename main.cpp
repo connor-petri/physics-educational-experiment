@@ -24,11 +24,11 @@ private:
 
 int main()
 {
-    AddTest(2, 3, 5);
-    AddTest(3, 3, 5);
-    AddTest(1, 2, 3);
-    AddTest(2, 2, 4);
-    AddTest(5, 5, 10);
+    AddTest t1(2, 3, 5);
+    AddTest t2(3, 3, 5);
+    AddTest t3(1, 2, 3);
+    AddTest t4(2, 2, 4);
+    AddTest t5(5, 5, 10);
 
     peeTest::PeeTest::runall();
 }
