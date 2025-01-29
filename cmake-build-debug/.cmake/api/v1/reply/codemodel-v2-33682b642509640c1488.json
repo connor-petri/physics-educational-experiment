@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "physics_educational_experiment::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-physics_educational_experiment-Debug-c203e7c885a5761a6a33.json",
+					"jsonFile" : "target-physics_educational_experiment-Debug-34913af7dff288aced44.json",
 					"name" : "physics_educational_experiment",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/connor/Projects/physics-educational-experiment/cmake-build-debug",
-		"source" : "/Users/connor/Projects/physics-educational-experiment"
+		"build" : "/home/connor/Projects/physics-educational-experiment/physics-educational-experiment/cmake-build-debug",
+		"source" : "/home/connor/Projects/physics-educational-experiment/physics-educational-experiment"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 4
+		"minor" : 7
 	}
 }

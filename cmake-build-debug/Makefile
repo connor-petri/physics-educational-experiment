@@ -249,6 +249,30 @@ vectors/Vector3.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/physics_educational_experiment.dir/build.make CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.s
 .PHONY : vectors/Vector3.cpp.s
 
+vectors/tests/Vector3Test.o: vectors/tests/Vector3Test.cpp.o
+.PHONY : vectors/tests/Vector3Test.o
+
+# target to build an object file
+vectors/tests/Vector3Test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/physics_educational_experiment.dir/build.make CMakeFiles/physics_educational_experiment.dir/vectors/tests/Vector3Test.cpp.o
+.PHONY : vectors/tests/Vector3Test.cpp.o
+
+vectors/tests/Vector3Test.i: vectors/tests/Vector3Test.cpp.i
+.PHONY : vectors/tests/Vector3Test.i
+
+# target to preprocess a source file
+vectors/tests/Vector3Test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/physics_educational_experiment.dir/build.make CMakeFiles/physics_educational_experiment.dir/vectors/tests/Vector3Test.cpp.i
+.PHONY : vectors/tests/Vector3Test.cpp.i
+
+vectors/tests/Vector3Test.s: vectors/tests/Vector3Test.cpp.s
+.PHONY : vectors/tests/Vector3Test.s
+
+# target to generate assembly for a file
+vectors/tests/Vector3Test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/physics_educational_experiment.dir/build.make CMakeFiles/physics_educational_experiment.dir/vectors/tests/Vector3Test.cpp.s
+.PHONY : vectors/tests/Vector3Test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -273,6 +297,9 @@ help:
 	@echo "... vectors/Vector3.o"
 	@echo "... vectors/Vector3.i"
 	@echo "... vectors/Vector3.s"
+	@echo "... vectors/tests/Vector3Test.o"
+	@echo "... vectors/tests/Vector3Test.i"
+	@echo "... vectors/tests/Vector3Test.s"
 .PHONY : help
 
 
