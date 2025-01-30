@@ -6,6 +6,9 @@
 
 namespace peeTest
 {
+    Result::Result() {
+        *this->_status = Status::NONE;
+    }
 
     Result::Result(const enum Status &status) {
         *this->_status = status;

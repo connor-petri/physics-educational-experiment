@@ -783,8 +783,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/connor/Projects/physics-educational-experiment/physics-educational-experiment/cmake-build-debug",
-		"source" : "/home/connor/Projects/physics-educational-experiment/physics-educational-experiment"
+		"build" : "/home/connor/Projects/physics-educational-experiment/cmake-build-debug",
+		"source" : "/home/connor/Projects/physics-educational-experiment"
 	},
 	"version" : 
 	{

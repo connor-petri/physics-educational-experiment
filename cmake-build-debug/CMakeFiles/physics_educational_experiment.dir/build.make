@@ -53,10 +53,10 @@ RM = /home/connor/Programs/CLion/bin/cmake/linux/x64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/connor/Projects/physics-educational-experiment/physics-educational-experiment
+CMAKE_SOURCE_DIR = /home/connor/Projects/physics-educational-experiment
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/cmake-build-debug
+CMAKE_BINARY_DIR = /home/connor/Projects/physics-educational-experiment/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/physics_educational_experiment.dir/depend.make
@@ -70,88 +70,88 @@ include CMakeFiles/physics_educational_experiment.dir/progress.make
 include CMakeFiles/physics_educational_experiment.dir/flags.make
 
 CMakeFiles/physics_educational_experiment.dir/main.cpp.o: CMakeFiles/physics_educational_experiment.dir/flags.make
-CMakeFiles/physics_educational_experiment.dir/main.cpp.o: /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/main.cpp
+CMakeFiles/physics_educational_experiment.dir/main.cpp.o: /home/connor/Projects/physics-educational-experiment/main.cpp
 CMakeFiles/physics_educational_experiment.dir/main.cpp.o: CMakeFiles/physics_educational_experiment.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/connor/Projects/physics-educational-experiment/physics-educational-experiment/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/physics_educational_experiment.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/physics_educational_experiment.dir/main.cpp.o -MF CMakeFiles/physics_educational_experiment.dir/main.cpp.o.d -o CMakeFiles/physics_educational_experiment.dir/main.cpp.o -c /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/connor/Projects/physics-educational-experiment/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/physics_educational_experiment.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/physics_educational_experiment.dir/main.cpp.o -MF CMakeFiles/physics_educational_experiment.dir/main.cpp.o.d -o CMakeFiles/physics_educational_experiment.dir/main.cpp.o -c /home/connor/Projects/physics-educational-experiment/main.cpp
 
 CMakeFiles/physics_educational_experiment.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/physics_educational_experiment.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/main.cpp > CMakeFiles/physics_educational_experiment.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/connor/Projects/physics-educational-experiment/main.cpp > CMakeFiles/physics_educational_experiment.dir/main.cpp.i
 
 CMakeFiles/physics_educational_experiment.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/physics_educational_experiment.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/main.cpp -o CMakeFiles/physics_educational_experiment.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/connor/Projects/physics-educational-experiment/main.cpp -o CMakeFiles/physics_educational_experiment.dir/main.cpp.s
 
 CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.o: CMakeFiles/physics_educational_experiment.dir/flags.make
-CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.o: /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/vectors/Vector3.cpp
+CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.o: /home/connor/Projects/physics-educational-experiment/vectors/Vector3.cpp
 CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.o: CMakeFiles/physics_educational_experiment.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/connor/Projects/physics-educational-experiment/physics-educational-experiment/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.o -MF CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.o.d -o CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.o -c /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/vectors/Vector3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/connor/Projects/physics-educational-experiment/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.o -MF CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.o.d -o CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.o -c /home/connor/Projects/physics-educational-experiment/vectors/Vector3.cpp
 
 CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/vectors/Vector3.cpp > CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/connor/Projects/physics-educational-experiment/vectors/Vector3.cpp > CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.i
 
 CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/vectors/Vector3.cpp -o CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/connor/Projects/physics-educational-experiment/vectors/Vector3.cpp -o CMakeFiles/physics_educational_experiment.dir/vectors/Vector3.cpp.s
 
 CMakeFiles/physics_educational_experiment.dir/PeeTest/PeeTest.cpp.o: CMakeFiles/physics_educational_experiment.dir/flags.make
-CMakeFiles/physics_educational_experiment.dir/PeeTest/PeeTest.cpp.o: /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/PeeTest/PeeTest.cpp
+CMakeFiles/physics_educational_experiment.dir/PeeTest/PeeTest.cpp.o: /home/connor/Projects/physics-educational-experiment/PeeTest/PeeTest.cpp
 CMakeFiles/physics_educational_experiment.dir/PeeTest/PeeTest.cpp.o: CMakeFiles/physics_educational_experiment.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/connor/Projects/physics-educational-experiment/physics-educational-experiment/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/physics_educational_experiment.dir/PeeTest/PeeTest.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/physics_educational_experiment.dir/PeeTest/PeeTest.cpp.o -MF CMakeFiles/physics_educational_experiment.dir/PeeTest/PeeTest.cpp.o.d -o CMakeFiles/physics_educational_experiment.dir/PeeTest/PeeTest.cpp.o -c /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/PeeTest/PeeTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/connor/Projects/physics-educational-experiment/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/physics_educational_experiment.dir/PeeTest/PeeTest.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/physics_educational_experiment.dir/PeeTest/PeeTest.cpp.o -MF CMakeFiles/physics_educational_experiment.dir/PeeTest/PeeTest.cpp.o.d -o CMakeFiles/physics_educational_experiment.dir/PeeTest/PeeTest.cpp.o -c /home/connor/Projects/physics-educational-experiment/PeeTest/PeeTest.cpp
 
 CMakeFiles/physics_educational_experiment.dir/PeeTest/PeeTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/physics_educational_experiment.dir/PeeTest/PeeTest.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/PeeTest/PeeTest.cpp > CMakeFiles/physics_educational_experiment.dir/PeeTest/PeeTest.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/connor/Projects/physics-educational-experiment/PeeTest/PeeTest.cpp > CMakeFiles/physics_educational_experiment.dir/PeeTest/PeeTest.cpp.i
 
 CMakeFiles/physics_educational_experiment.dir/PeeTest/PeeTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/physics_educational_experiment.dir/PeeTest/PeeTest.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/PeeTest/PeeTest.cpp -o CMakeFiles/physics_educational_experiment.dir/PeeTest/PeeTest.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/connor/Projects/physics-educational-experiment/PeeTest/PeeTest.cpp -o CMakeFiles/physics_educational_experiment.dir/PeeTest/PeeTest.cpp.s
 
 CMakeFiles/physics_educational_experiment.dir/PeeTest/Result.cpp.o: CMakeFiles/physics_educational_experiment.dir/flags.make
-CMakeFiles/physics_educational_experiment.dir/PeeTest/Result.cpp.o: /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/PeeTest/Result.cpp
+CMakeFiles/physics_educational_experiment.dir/PeeTest/Result.cpp.o: /home/connor/Projects/physics-educational-experiment/PeeTest/Result.cpp
 CMakeFiles/physics_educational_experiment.dir/PeeTest/Result.cpp.o: CMakeFiles/physics_educational_experiment.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/connor/Projects/physics-educational-experiment/physics-educational-experiment/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/physics_educational_experiment.dir/PeeTest/Result.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/physics_educational_experiment.dir/PeeTest/Result.cpp.o -MF CMakeFiles/physics_educational_experiment.dir/PeeTest/Result.cpp.o.d -o CMakeFiles/physics_educational_experiment.dir/PeeTest/Result.cpp.o -c /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/PeeTest/Result.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/connor/Projects/physics-educational-experiment/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/physics_educational_experiment.dir/PeeTest/Result.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/physics_educational_experiment.dir/PeeTest/Result.cpp.o -MF CMakeFiles/physics_educational_experiment.dir/PeeTest/Result.cpp.o.d -o CMakeFiles/physics_educational_experiment.dir/PeeTest/Result.cpp.o -c /home/connor/Projects/physics-educational-experiment/PeeTest/Result.cpp
 
 CMakeFiles/physics_educational_experiment.dir/PeeTest/Result.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/physics_educational_experiment.dir/PeeTest/Result.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/PeeTest/Result.cpp > CMakeFiles/physics_educational_experiment.dir/PeeTest/Result.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/connor/Projects/physics-educational-experiment/PeeTest/Result.cpp > CMakeFiles/physics_educational_experiment.dir/PeeTest/Result.cpp.i
 
 CMakeFiles/physics_educational_experiment.dir/PeeTest/Result.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/physics_educational_experiment.dir/PeeTest/Result.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/PeeTest/Result.cpp -o CMakeFiles/physics_educational_experiment.dir/PeeTest/Result.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/connor/Projects/physics-educational-experiment/PeeTest/Result.cpp -o CMakeFiles/physics_educational_experiment.dir/PeeTest/Result.cpp.s
 
 CMakeFiles/physics_educational_experiment.dir/PeeTest/TestCase.cpp.o: CMakeFiles/physics_educational_experiment.dir/flags.make
-CMakeFiles/physics_educational_experiment.dir/PeeTest/TestCase.cpp.o: /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/PeeTest/TestCase.cpp
+CMakeFiles/physics_educational_experiment.dir/PeeTest/TestCase.cpp.o: /home/connor/Projects/physics-educational-experiment/PeeTest/TestCase.cpp
 CMakeFiles/physics_educational_experiment.dir/PeeTest/TestCase.cpp.o: CMakeFiles/physics_educational_experiment.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/connor/Projects/physics-educational-experiment/physics-educational-experiment/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/physics_educational_experiment.dir/PeeTest/TestCase.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/physics_educational_experiment.dir/PeeTest/TestCase.cpp.o -MF CMakeFiles/physics_educational_experiment.dir/PeeTest/TestCase.cpp.o.d -o CMakeFiles/physics_educational_experiment.dir/PeeTest/TestCase.cpp.o -c /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/PeeTest/TestCase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/connor/Projects/physics-educational-experiment/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/physics_educational_experiment.dir/PeeTest/TestCase.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/physics_educational_experiment.dir/PeeTest/TestCase.cpp.o -MF CMakeFiles/physics_educational_experiment.dir/PeeTest/TestCase.cpp.o.d -o CMakeFiles/physics_educational_experiment.dir/PeeTest/TestCase.cpp.o -c /home/connor/Projects/physics-educational-experiment/PeeTest/TestCase.cpp
 
 CMakeFiles/physics_educational_experiment.dir/PeeTest/TestCase.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/physics_educational_experiment.dir/PeeTest/TestCase.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/PeeTest/TestCase.cpp > CMakeFiles/physics_educational_experiment.dir/PeeTest/TestCase.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/connor/Projects/physics-educational-experiment/PeeTest/TestCase.cpp > CMakeFiles/physics_educational_experiment.dir/PeeTest/TestCase.cpp.i
 
 CMakeFiles/physics_educational_experiment.dir/PeeTest/TestCase.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/physics_educational_experiment.dir/PeeTest/TestCase.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/PeeTest/TestCase.cpp -o CMakeFiles/physics_educational_experiment.dir/PeeTest/TestCase.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/connor/Projects/physics-educational-experiment/PeeTest/TestCase.cpp -o CMakeFiles/physics_educational_experiment.dir/PeeTest/TestCase.cpp.s
 
 CMakeFiles/physics_educational_experiment.dir/vectors/tests/Vector3Test.cpp.o: CMakeFiles/physics_educational_experiment.dir/flags.make
-CMakeFiles/physics_educational_experiment.dir/vectors/tests/Vector3Test.cpp.o: /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/vectors/tests/Vector3Test.cpp
+CMakeFiles/physics_educational_experiment.dir/vectors/tests/Vector3Test.cpp.o: /home/connor/Projects/physics-educational-experiment/vectors/tests/Vector3Test.cpp
 CMakeFiles/physics_educational_experiment.dir/vectors/tests/Vector3Test.cpp.o: CMakeFiles/physics_educational_experiment.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/connor/Projects/physics-educational-experiment/physics-educational-experiment/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/physics_educational_experiment.dir/vectors/tests/Vector3Test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/physics_educational_experiment.dir/vectors/tests/Vector3Test.cpp.o -MF CMakeFiles/physics_educational_experiment.dir/vectors/tests/Vector3Test.cpp.o.d -o CMakeFiles/physics_educational_experiment.dir/vectors/tests/Vector3Test.cpp.o -c /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/vectors/tests/Vector3Test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/connor/Projects/physics-educational-experiment/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/physics_educational_experiment.dir/vectors/tests/Vector3Test.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/physics_educational_experiment.dir/vectors/tests/Vector3Test.cpp.o -MF CMakeFiles/physics_educational_experiment.dir/vectors/tests/Vector3Test.cpp.o.d -o CMakeFiles/physics_educational_experiment.dir/vectors/tests/Vector3Test.cpp.o -c /home/connor/Projects/physics-educational-experiment/vectors/tests/Vector3Test.cpp
 
 CMakeFiles/physics_educational_experiment.dir/vectors/tests/Vector3Test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/physics_educational_experiment.dir/vectors/tests/Vector3Test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/vectors/tests/Vector3Test.cpp > CMakeFiles/physics_educational_experiment.dir/vectors/tests/Vector3Test.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/connor/Projects/physics-educational-experiment/vectors/tests/Vector3Test.cpp > CMakeFiles/physics_educational_experiment.dir/vectors/tests/Vector3Test.cpp.i
 
 CMakeFiles/physics_educational_experiment.dir/vectors/tests/Vector3Test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/physics_educational_experiment.dir/vectors/tests/Vector3Test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/vectors/tests/Vector3Test.cpp -o CMakeFiles/physics_educational_experiment.dir/vectors/tests/Vector3Test.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/connor/Projects/physics-educational-experiment/vectors/tests/Vector3Test.cpp -o CMakeFiles/physics_educational_experiment.dir/vectors/tests/Vector3Test.cpp.s
 
 # Object files for target physics_educational_experiment
 physics_educational_experiment_OBJECTS = \
@@ -173,7 +173,7 @@ physics_educational_experiment: CMakeFiles/physics_educational_experiment.dir/Pe
 physics_educational_experiment: CMakeFiles/physics_educational_experiment.dir/vectors/tests/Vector3Test.cpp.o
 physics_educational_experiment: CMakeFiles/physics_educational_experiment.dir/build.make
 physics_educational_experiment: CMakeFiles/physics_educational_experiment.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/connor/Projects/physics-educational-experiment/physics-educational-experiment/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable physics_educational_experiment"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/connor/Projects/physics-educational-experiment/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable physics_educational_experiment"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/physics_educational_experiment.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -185,6 +185,6 @@ CMakeFiles/physics_educational_experiment.dir/clean:
 .PHONY : CMakeFiles/physics_educational_experiment.dir/clean
 
 CMakeFiles/physics_educational_experiment.dir/depend:
-	cd /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/connor/Projects/physics-educational-experiment/physics-educational-experiment /home/connor/Projects/physics-educational-experiment/physics-educational-experiment /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/cmake-build-debug /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/cmake-build-debug /home/connor/Projects/physics-educational-experiment/physics-educational-experiment/cmake-build-debug/CMakeFiles/physics_educational_experiment.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/connor/Projects/physics-educational-experiment/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/connor/Projects/physics-educational-experiment /home/connor/Projects/physics-educational-experiment /home/connor/Projects/physics-educational-experiment/cmake-build-debug /home/connor/Projects/physics-educational-experiment/cmake-build-debug /home/connor/Projects/physics-educational-experiment/cmake-build-debug/CMakeFiles/physics_educational_experiment.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/physics_educational_experiment.dir/depend
 

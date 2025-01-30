@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/connor/Projects/physics-educational-experiment/physics-educational-experiment/cmake-build-debug"
+			"value" : "/home/connor/Projects/physics-educational-experiment/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/connor/Projects/physics-educational-experiment/physics-educational-experiment/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/connor/Projects/physics-educational-experiment/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -603,7 +603,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/connor/Projects/physics-educational-experiment/physics-educational-experiment"
+			"value" : "/home/connor/Projects/physics-educational-experiment"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1167,7 +1167,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/connor/Projects/physics-educational-experiment/physics-educational-experiment/cmake-build-debug"
+			"value" : "/home/connor/Projects/physics-educational-experiment/cmake-build-debug"
 		},
 		{
 			"name" : "physics_educational_experiment_IS_TOP_LEVEL",
@@ -1191,7 +1191,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/connor/Projects/physics-educational-experiment/physics-educational-experiment"
+			"value" : "/home/connor/Projects/physics-educational-experiment"
 		}
 	],
 	"kind" : "cache",

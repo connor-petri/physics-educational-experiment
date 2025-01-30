@@ -103,7 +103,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/connor/Programs/CLion/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-Initialize.cmake"
   "/home/connor/Programs/CLion/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux.cmake"
   "/home/connor/Programs/CLion/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake"
-  "/home/connor/Projects/physics-educational-experiment/physics-educational-experiment/CMakeLists.txt"
+  "/home/connor/Projects/physics-educational-experiment/CMakeLists.txt"
   "CMakeFiles/3.30.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.30.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.30.5/CMakeSystem.cmake"
