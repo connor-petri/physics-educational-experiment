@@ -12,6 +12,8 @@ namespace pee
         // Constructors
         explicit Vector3(float x = 0.0, float y = 0.0, float z = 0.0);
         explicit Vector3(int x = 0, int y = 0, int z = 0);
+        Vector3(const Vector3 &v);
+        Vector3(float v[3]);
 
         ~Vector3();
 
@@ -65,8 +67,8 @@ namespace pee
 
 
     protected:
-        float *_x;
-        float *_y;
-        float *_z;
+        float *_x = new float;
+        float *_y = new float;
+        float *_z = new float;
     };
 }
