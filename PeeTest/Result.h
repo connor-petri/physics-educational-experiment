@@ -14,7 +14,7 @@ namespace peeTest
         NONE,
         SUCCESS,
         FAILURE,
-        ERROR
+        ERROR = -1
     };
 
     class Result {
@@ -26,7 +26,14 @@ namespace peeTest
         ~Result();
 
         const Status status() const { return *this->_status; }
-        const void status(const Status &status) { *this->_status = status; }
+        void status(const Status &status) { *this->_status = status; }
+
+        void setFail() { *this->_status = Status::FAILURE; }
+        void setError() { *this->_status = Status::ERROR; }
+
+        bool fail() const { return *this->_status == Status::FAILURE; }
+        bool ok() const { return *this->_status == Status::SUCCESS; }
+        bool error() const { return *this->_status == Status::ERROR; }
 
         const std::string & details() const { return *this->_details; }
 
