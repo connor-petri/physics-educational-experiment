@@ -27,7 +27,7 @@ namespace peeTest
         static void runAll();
 
         // misc functions
-        static bool assert(float a, float b);
+        static bool assertEqual(float a, float b);
 
     private:
         static std::vector<TestCase*> *_tests;

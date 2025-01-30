@@ -4,60 +4,43 @@
 
 #include "Vector3Test.h"
 
-#define assert PeeTest::assert
+#define assertEqual PeeTest::assertEqual
 
 namespace pee {
 
-    Vector3Test::Vector3Test(float x, float y, float z) {
-        *this->_v[0] = x;
-        *this->_v[1] = y;
-        *this->_v[2] = z;
+    Vector3Test::Vector3Test(float x1, float y1, float z1, float x2, float y2, float z2) {
+        this->r = new Result(Status::SUCCESS);
+        this->v1 = new Vector3(x1, y1, z1);
+        this->v2 = new Vector3(x2, y2, z2);
     }
 
     Vector3Test::~Vector3Test() {
-        delete[] this->_v;
+        delete this->v1;
+        delete this->v2;
     }
 
     // Tests
-    Result & Vector3Test::constructors(Result &r) {
-        Vector3 v(*this->_v[0], *this->_v[1], *this->_v[2]);
-        if (!assert(this->x(), v.x())) {
-            r.append("Vector3::Vector3(float x, float y, float z) -> x values do not match.");
+    Result & Vector3Test::operators(Result &r) {
+        Vector3 v = *this->v1;
+        if (!assertEqual(v.x(), this->v1->x())) {
+            r.append("Vector3Test::operators -> Vector3::operator= -> x values do not match.");
             r.setFail();
         }
-        if (!assert(this->y(), v.y())) {
-            r.append("Vector3::Vector3(float x, float y) -> y values do not match.");
+        if (!assertEqual(v.y(), this->v2->y())) {
+            r.append("Vector3Test::operators -> Vector3::operator= -> y values do not match.");
             r.setFail();
         }
-        if (!assert(this->z(), v.z())) {
-            r.append("Vector3::Vector3(float x, float y) -> z values do not match.");
-        }
-
-        v = Vector3(std::floor(v.x()), std::floor(v.y()), std::floor(v.z()));
-
-        if (!assert(this->x(), v.x())) {
-            r.append("Vector3::Vector3(int x, int y, int z) -> x values do not match.");
+        if (!assertEqual(v.z(), this->v1->z())) {
+            r.append("Vector3Test::operators -> Vector3::operator= -> z values do not match.");
             r.setFail();
         }
-        if (!assert(this->y(), v.y())) {
-            r.append("Vector3::Vector3(int x, int y) -> y values do not match.");
-            r.setFail();
-        }
-        if (!assert(this->z(), v.z())) {
-            r.append("Vector3::Vector3(int x, int y) -> z values do not match.");
-            r.setFail();
-        }
-
-        //TODO: Copy constructor and array constructor
-        //TODO: Decide if Vector3Test should hold 2 Vectors
 
         return r;
     }
 
     Result Vector3Test::run() {
-        Result r(Status::SUCCESS);
 
-        return r;
+        return *this->r;
     }
 
 } // pee

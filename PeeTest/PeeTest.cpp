@@ -35,7 +35,7 @@ namespace peeTest {
     }
 
     // misc functions
-    bool PeeTest::assert(float a, float b) {
+    bool PeeTest::assertEqual(float a, float b) {
         int aRounded = std::floor(a * float(10^SIGFIGS));
         int bRounded = std::floor(b * float(10^SIGFIGS));
         return aRounded == bRounded;

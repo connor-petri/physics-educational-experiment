@@ -16,20 +16,19 @@ namespace pee {
 
     class Vector3Test : peeTest::TestCase {
     public:
-        Vector3Test(float x, float y, float z);
+        Vector3Test(float x1, float y1, float z1, float x2, float y2, float z2);
         ~Vector3Test() override;
-
-        float x() { return *this->_v[0]; }
-        float y() { return *this->_v[1]; }
-        float z() { return *this->_v[2]; }
 
         Result run() override;
 
     private:
-        float **_v = new float*[3];
+        Result *r;
+        Vector3 *v1 = nullptr;
+        Vector3 *v2 = nullptr;
 
         // Tests
-        Result & constructors(Result &r);
+        Result & operators(Result &r);
+        Result & arithmetic(Result &r);
     };
 
 } // pee
