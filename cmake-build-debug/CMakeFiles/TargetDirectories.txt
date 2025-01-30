@@ -1,3 +1,0 @@
-/home/connor/Projects/physics-educational-experiment/cmake-build-debug/CMakeFiles/physics_educational_experiment.dir
-/home/connor/Projects/physics-educational-experiment/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/connor/Projects/physics-educational-experiment/cmake-build-debug/CMakeFiles/rebuild_cache.dir
