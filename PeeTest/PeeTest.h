@@ -11,6 +11,8 @@
 #include "TestCase.h"
 #include <cmath>
 
+#define SIGFIGS 5
+
 namespace peeTest
 {
 
@@ -25,6 +27,7 @@ namespace peeTest
         static void runAll();
 
         // misc functions
+        static bool assert(float a, float b);
 
     private:
         static std::vector<TestCase*> *_tests;

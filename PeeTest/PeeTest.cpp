@@ -10,6 +10,8 @@
 
 namespace peeTest {
 
+    std::vector<TestCase*> * PeeTest::_tests = new std::vector<TestCase*>;
+
     void PeeTest::add(TestCase *test) {
         PeeTest::_tests->push_back(test);
     }
@@ -32,6 +34,11 @@ namespace peeTest {
         }
     }
 
-    std::vector<TestCase*> * PeeTest::_tests = new std::vector<TestCase*>;
+    // misc functions
+    bool PeeTest::assert(float a, float b) {
+        int aRounded = std::floor(a * float(10^SIGFIGS));
+        int bRounded = std::floor(b * float(10^SIGFIGS));
+        return aRounded == bRounded;
+    }
 
 }
