@@ -3,7 +3,10 @@
 //
 
 #include "Vector3.h"
+#include "../PeeTest/PeeTest.h"
 #include <cmath>
+
+#define assertEqual peeTest::PeeTest::assertEqual
 
 using pee::Vector3;
 namespace pee {
@@ -158,7 +161,7 @@ namespace pee {
 
     // Boolean Operators
     bool Vector3::operator==(const Vector3 &other) const {
-        return *this->_x == other.x() && *this->_y == other.y() && *this->_z == other.z();
+        return assertEqual(*this->_x, other.x()) && assertEqual(*this->_y, other.y()) && assertEqual(*this->_z, other.z());
     }
 
     bool Vector3::operator!=(const Vector3 &other) const {
