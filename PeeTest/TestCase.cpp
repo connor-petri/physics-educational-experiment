@@ -9,6 +9,7 @@ namespace peeTest {
 
     TestCase::TestCase() {
         *this->_id = TestCase::_nextId++;
+        this->result = new Result(Status::SUCCESS);
         PeeTest::add(this);
     }
 

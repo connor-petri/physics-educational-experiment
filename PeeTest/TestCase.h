@@ -14,11 +14,13 @@ namespace peeTest {
         virtual ~TestCase();
 
         unsigned int id() const;
+
         virtual Result run() = 0;
 
     protected:
         unsigned int *_id = new unsigned int;
         static unsigned int _nextId;
+        Result *result = nullptr;
     };
 
 } // peeTest
