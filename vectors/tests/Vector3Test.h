@@ -8,11 +8,9 @@
 #include "../../PeeTest/PeeTest.h"
 #include "../Vector3.h"
 
-using peeTest::Result;
-using peeTest::Status;
-using peeTest::PeeTest;
+using pee::Vector3;
 
-namespace pee {
+namespace peeTest {
 
     class Vector3Test : peeTest::TestCase {
     public:
@@ -22,13 +20,12 @@ namespace pee {
         Result run() override;
 
     private:
-        Result *r;
         Vector3 *v1 = nullptr;
         Vector3 *v2 = nullptr;
 
         // Tests
-        Result & operators(Result &r);
-        Result & arithmetic(Result &r);
+        void boolOps();
+        void arithmeticOps();
     };
 
 } // pee

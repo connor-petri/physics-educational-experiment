@@ -1,6 +1,7 @@
 #include <iostream>
 
 #include "PeeTest/PeeTest.h"
+#include "vectors/tests/Vector3Test.h"
 #include <vector>
 
 class AddTest : public peeTest::TestCase {
@@ -24,11 +25,10 @@ private:
 
 int main()
 {
-    AddTest t1(2, 3, 5);
-    AddTest t2(3, 3, 5);
-    AddTest t3(1, 2, 3);
-    AddTest t4(2, 2, 4);
-    AddTest t5(5, 5, 10);
+    using peeTest::Vector3Test;
+    Vector3Test t0(1,1,1,1,1,1);
+    Vector3Test t1(1,0,0,2,0,0); // Parallel
+    Vector3Test t2(1,0,0,0,1,0); // Orthogonal
 
     peeTest::PeeTest::runAll();
 }
