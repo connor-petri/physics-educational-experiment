@@ -27,7 +27,6 @@ namespace peeTest {
         void boolOps() const;
         void arithmeticOps() const;
         void vectorOps() const;
-        // void trigOps() const;
     };
 
 } // pee

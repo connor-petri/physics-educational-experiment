@@ -66,32 +66,6 @@ namespace pee {
         return sqrt(pow(*this->_x, 2.0f) + pow(*this->_y, 2.0f) + pow(*this->_z, 2.0f));
     }
 
-    // Angles
-    float Vector3::angleAlpha() const {
-        return acos(*this->_x / this->magnitude());
-    }
-
-    float Vector3::angleAlphaDeg() const
-    {
-        return this->angleAlpha() / float(M_2_PI) * 360.0f;
-    }
-
-    float Vector3::angleBeta() const {
-        return acos(*this->_y / this->magnitude());
-    }
-
-    float Vector3::angleBetaDeg() const {
-        return this->angleBeta() / float(M_2_PI) * 360;
-    }
-
-    float Vector3::angleGamma() const {
-        return acos(*this->_z / this->magnitude());
-    }
-
-    float Vector3::angleGammaDeg() const {
-        return this->angleGamma() / float(M_2_PI) * 360;
-    }
-
     // Operations
     float Vector3::dot(const Vector3 &other) const {
         return *this->_x * other.x() + *this->_y * other.y() + *this->_z * other.z();

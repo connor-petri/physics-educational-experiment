@@ -28,21 +28,7 @@ namespace pee
         float magnitude() const;
         float mag() const { return this->magnitude(); }
 
-        // TODO: Account for the range of the arccos function in the angle methods
-        // Angles
-        float angleAlpha() const; // Angle alpha in radians
-        float angleAlphaDeg() const; // Angle alpha in degrees
-        float angleBeta() const; // Angle beta in radians
-        float angleBetaDeg() const; // Angle Beta in Degrees
-        virtual float angleGamma() const; // Angle gamma in radians
-        virtual float angleGammaDeg() const; // Angle gamma in degrees
-
-        float angleX() const { return this->angleAlpha(); } // Angle from the positive x-axis in radians
-        float angleXDeg() const { return this->angleAlphaDeg(); } // Angle from the positive x-axis in degrees
-        float angleY() const { return this->angleBeta(); } // Angle from the positive y-axis in radians
-        float angleYDeg() const { return this->angleBetaDeg(); } // Angle from the positive y-axis in degrees
-        virtual float angleZ() const { return this->angleGamma(); } // Angle from the positive z-axis in radians
-        virtual float angleZDeg() const { return this->angleGammaDeg(); } // Angle from the positive z-axis in degrees
+        // Add trig functions when needed
 
         // Operations
         float dot(const Vector3 &other) const;
