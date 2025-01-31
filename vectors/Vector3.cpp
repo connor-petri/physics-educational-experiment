@@ -100,7 +100,7 @@ namespace pee {
     Vector3 Vector3::cross(const Vector3 &other) const {
         float x = (*this->_y * other.z()) - (*this->_z * other.y());
         float y = (*this->_z * other.x()) - (*this->_x * other.z());
-        float z = (*this->_z * other.y()) - (*this->_y * other.x());
+        float z = (*this->_x * other.y()) - (*this->_y * other.x());
 
         return Vector3(x, y, z);
     }
@@ -112,9 +112,7 @@ namespace pee {
     }
 
     void Vector3::normalize() {
-        *this->_x /= this->magnitude();
-        *this->_y /= this->magnitude();
-        *this->_z /= this-> magnitude();
+        *this = this->unitVector();
     }
 
     // Operator overloads

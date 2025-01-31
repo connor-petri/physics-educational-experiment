@@ -24,8 +24,10 @@ namespace peeTest {
         Vector3 *v2 = nullptr;
 
         // Tests
-        void boolOps();
-        void arithmeticOps();
+        void boolOps() const;
+        void arithmeticOps() const;
+        void vectorOps() const;
+        // void trigOps() const;
     };
 
 } // pee

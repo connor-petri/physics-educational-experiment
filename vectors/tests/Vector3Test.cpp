@@ -8,6 +8,7 @@
 
 namespace peeTest {
 
+    // Constructors ===================================================================================================
     Vector3Test::Vector3Test(float x1, float y1, float z1, float x2, float y2, float z2) {
         this->v1 = new Vector3(x1, y1, z1);
         this->v2 = new Vector3(x2, y2, z2);
@@ -19,16 +20,18 @@ namespace peeTest {
     }
 
 
+    // Run ============================================================================================================
     Result Vector3Test::run() {
         this->boolOps();
         this->arithmeticOps();
+        this->vectorOps();
 
         return *this->result;
     }
 
 
-    // Tests
-    void Vector3Test::boolOps() {
+    // Bool Operator Tests ============================================================================================
+    void Vector3Test::boolOps() const {
         // =
         Vector3 v = *this->v1;
         if (!assertEqual(v.x(), this->v1->x())) {
@@ -52,7 +55,8 @@ namespace peeTest {
     }
 
 
-    void Vector3Test::arithmeticOps() {
+    // Arithmetic Operator Tests ======================================================================================
+    void Vector3Test::arithmeticOps() const {
         // + ------------------------------------------
         Vector3 v = *this->v1 + *this->v2;
         if (!assertEqual(v.x(), this->v1->x() + this->v2->x())) {
@@ -132,11 +136,59 @@ namespace peeTest {
                                     + pow(this->v1->z() + this->v2->z(), 2));
 
         if (!assertEqual(expectedMag, v.magnitude())) {
-            this->result->append("Vector3Test::arithmeticOps -> Vector3::magnitude() -> Expected: "
-                                    + expectedMag + " Result: " + v.magnitude());
+            this->result->append("Vector3Test::arithmeticOps -> Vector3::magnitude() -> Magnitude result incorrect");
+            this->result->append("Result was ," + std::to_string(v.magnitude()));
+            this->result->append("Expected Magnitude result is " + std::to_string(expectedMag));;
+            this->result->setFail();
         }
     }
 
 
+    // Vector Operator Tests ==========================================================================================
+    void Vector3Test::vectorOps() const {
+        // Dot Product ----------------------------------
+        float expectedDot = this->v1->x() * this->v2->x()
+                            + this->v1->y() * this->v2->y()
+                            + this->v1->z() * this->v2->z();
+
+        if (!assertEqual(expectedDot, *this->v1 * *this->v2)) {
+            this->result->append("Vector3Test::vectorOps -> Vector3::operator*(const Vector3 &other) -> dot product result incorrect");
+            this->result->append("Result was : " + std::to_string(*this->v1 * *this->v2));
+            this->result->append("Expected Dot product result is " + std::to_string(expectedDot));
+            this->result->setFail();
+        }
+
+
+        // Cross Product --------------------------------
+        Vector3 expectedVector( (this->v1->y() * this->v2->z()) - (this->v1->z() * this->v2->y()),
+                                (this->v1->z() * this->v2->x()) - (this->v1->x() * this->v2->z()),
+                                (this->v1->x() * this->v2->y()) - (this->v1->y() * this->v2->x()) );
+
+        if (expectedVector != *this->v1 % *this->v2) {
+            this->result->append("Vector3Test::vectorOps -> Vector3::operator% -> Cross product result incorrect.");
+            this->result->append("Result was : " + (*this->v1 % *this->v2).toString());
+            this->result->append("Expected cross product result is " + expectedVector.toString());
+            this->result->setFail();
+        }
+
+
+        // Unit Vector and normalization
+        Vector3 v = *this->v1 + *this->v2 * 5.2f;
+        if (v.unitVector() != v / v.magnitude()) {
+            this->result->append("Vector3Test::vectorOps -> Vector3::unitVector() -> Unit Vector result incorrect.");
+            this->result->append("Result was : " + v.unitVector().toString());
+            this->result->append("Expected unit Vector result is " + v.toString());
+            this->result->setFail();
+        }
+
+        Vector3 expectedNormalized = v.unitVector();
+        v.normalize();
+        if (v != expectedNormalized) {
+            this->result->append("Vector3::vectorOps -> Vector3::normalize() -> Normalized result incorrect");
+            this->result->append("Result was : " + v.toString());
+            this->result->append("Expected normalized result is " + expectedNormalized.toString());
+            this->result->setFail();
+        }
+    }
 
 } // pee
