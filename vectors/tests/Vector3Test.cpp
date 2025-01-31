@@ -18,6 +18,15 @@ namespace peeTest {
         delete this->v2;
     }
 
+
+    Result Vector3Test::run() {
+        this->boolOps();
+        this->arithmeticOps();
+
+        return *this->result;
+    }
+
+
     // Tests
     void Vector3Test::boolOps() {
         // =
@@ -38,12 +47,13 @@ namespace peeTest {
         // == !=
         if (v != *this->v1) {
             this->result->append(   "Vector3Test::operators -> Vector3::operator== -> v == v1 should return true."
-                        + this->result->fail() ? "Possibly a cascading error. See previous log entry" : "");
+                                    + this->result->fail() ? "Possibly a cascading error. See previous log entry" : "");
         }
     }
 
+
     void Vector3Test::arithmeticOps() {
-        // +
+        // + ------------------------------------------
         Vector3 v = *this->v1 + *this->v2;
         if (!assertEqual(v.x(), this->v1->x() + this->v2->x())) {
             this->result->append("Vector3Test::arithmeticOps -> Vector3::operator+ -> x values do not match.");
@@ -58,7 +68,8 @@ namespace peeTest {
             this->result->setFail();
         }
 
-        // -
+
+        // - ------------------------------------------
         v = *this->v1 - *this->v2;
         if (!assertEqual(v.x(), this->v1->x() - this->v2->x())) {
             this->result->append("Vector3Test::arithmeticOps -> Vector3::operator- -> x values do not match.");
@@ -73,7 +84,8 @@ namespace peeTest {
             this->result->setFail();
         }
 
-        // Scalar Multiplication
+
+        // Scalar Multiplication ----------------------
         std::vector<float> mCases = { 5.3f, -1.0f, 0.0f, 442.42f, -399.23f, 0.001f, 0.00001f, 1.0f };
 
         for (const float num : mCases) {
@@ -92,7 +104,8 @@ namespace peeTest {
             }
         }
 
-        // Scalar Division
+
+        // Scalar Division ------------------------------
         for (const float num : mCases) {
             v = *this->v1 / num;
             if (!assertEqual(v.x(), this->v1->x() * 1.0f/num)) {
@@ -110,13 +123,20 @@ namespace peeTest {
         }
 
 
+        // Magnitude -----------------------------------
+        using std::sqrt;
+        using std::pow;
+        v = *this->v1 + *this->v2;
+        float expectedMag = sqrt(pow(this->v1->x() + this->v2->x(), 2)
+                                    + pow(this->v1->y() + this->v2->y(), 2)
+                                    + pow(this->v1->z() + this->v2->z(), 2));
+
+        if (!assertEqual(expectedMag, v.magnitude())) {
+            this->result->append("Vector3Test::arithmeticOps -> Vector3::magnitude() -> Expected: "
+                                    + expectedMag + " Result: " + v.magnitude());
+        }
     }
 
-    Result Vector3Test::run() {
-        this->boolOps();
-        this->arithmeticOps();
 
-        return *this->result;
-    }
 
 } // pee
