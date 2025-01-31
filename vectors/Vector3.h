@@ -19,7 +19,7 @@ namespace pee
 
         ~Vector3();
 
-        std::string toString() const;
+        virtual std::string toString() const;
 
         // Properties
         float x() const;

@@ -1,9 +1,9 @@
 //
-// Created by Connor Petri on 1/12/25.
+// Created by connor on 1/31/25.
 //
 
-#ifndef PHYSICS_EDUCATIONAL_EXPERIMENT_VECTOR2_H
-#define PHYSICS_EDUCATIONAL_EXPERIMENT_VECTOR2_H
+#ifndef VECTOR2_H
+#define VECTOR2_H
 
 #include "Vector3.h"
 
@@ -11,16 +11,13 @@ namespace pee {
 
     class Vector2 : public Vector3 {
     public:
-        explicit Vector2(float x = 0.0, float y = 0.0);
-        explicit Vector2(int x = 0, int y = 0);
+        Vector2(float x, float y);
+        ~Vector2() = default;
 
-        double z() override;
-
-        double angleGamma() override;
-        double angleGammaDegrees() override;
+        float z() const override;
+        Vector2 unitVector() const;
     };
 
-}
+} // pee
 
-
-#endif //PHYSICS_EDUCATIONAL_EXPERIMENT_VECTOR2_H
+#endif //VECTOR2_H
