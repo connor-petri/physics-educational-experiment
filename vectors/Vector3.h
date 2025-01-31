@@ -5,6 +5,8 @@
 
 #pragma once
 
+#include <string>
+
 namespace pee
 {
     class Vector3 {
@@ -16,6 +18,8 @@ namespace pee
         Vector3(float v[3]);
 
         ~Vector3();
+
+        std::string toString() const;
 
         // Properties
         float x() const;

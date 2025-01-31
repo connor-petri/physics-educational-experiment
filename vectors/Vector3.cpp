@@ -9,7 +9,12 @@
 #define assertEqual peeTest::PeeTest::assertEqual
 
 using pee::Vector3;
+using std::sqrt;
+using std::pow;
+using std::acos;
+
 namespace pee {
+
     Vector3::Vector3(float x, float y, float z) {
         *this->_x = x;
         *this->_y = y;
@@ -38,6 +43,10 @@ namespace pee {
         delete this->_x;
         delete this->_y;
         delete this->_z;
+    }
+
+    std::string Vector3::toString() const {
+        return "Vector3(x: " + std::to_string(*this->_x) + ", y: " + std::to_string(*this->_y) + ", z: " + std::to_string(*this->_z);
     }
 
     // Properties
