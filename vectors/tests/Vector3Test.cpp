@@ -72,6 +72,44 @@ namespace peeTest {
             this->result->append("Vector3Test::arithmeticOps -> Vector3::operator- -> z values do not match.");
             this->result->setFail();
         }
+
+        // Scalar Multiplication
+        std::vector<float> mCases = { 5.3f, -1.0f, 0.0f, 442.42f, -399.23f, 0.001f, 0.00001f, 1.0f };
+
+        for (const float num : mCases) {
+            v = *this->v1 * num;
+            if (!assertEqual(v.x(), this->v1->x() * num)) {
+                this->result->append("Vector3Test::arithmeticOps -> Vector3::operator*(float) -> x values do not match.");
+                this->result->setFail();
+            }
+            if (!assertEqual(v.y(), this->v1->y() * num)) {
+                this->result->append("Vector3Test::arithmeticOps -> Vector3::operator*(float) -> y values do not match.");
+                this->result->setFail();
+            }
+            if (!assertEqual(v.z(), this->v1->z() * num)) {
+                this->result->append("Vector3Test::arithmeticOps -> Vector3::operator*(float) -> z values do not match.");
+                this->result->setFail();
+            }
+        }
+
+        // Scalar Division
+        for (const float num : mCases) {
+            v = *this->v1 / num;
+            if (!assertEqual(v.x(), this->v1->x() * 1.0f/num)) {
+                this->result->append("Vector3Test::arithmeticOps -> Vector3::operator/(float) -> x values do not match.");
+                this->result->setFail();
+            }
+            if (!assertEqual(v.y(), this->v1->y() * 1.0f/num)) {
+                this->result->append("Vector3Test::arithmeticOps -> Vector3::operator/(float) -> y values do not match.");
+                this->result->setFail();
+            }
+            if (!assertEqual(v.z(), this->v1->z() * 1.0f/num)) {
+                this->result->append("Vector3Test::arithmeticOps -> Vector3::operator/(float) -> z values do not match.");
+                this->result->setFail();
+            }
+        }
+
+
     }
 
     Result Vector3Test::run() {

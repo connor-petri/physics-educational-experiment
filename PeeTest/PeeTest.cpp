@@ -21,9 +21,7 @@ namespace peeTest {
         for (TestCase *test : *PeeTest::_tests) {
             std::cout << BLUE << "Running Test " << test->id() << "...\n";
 
-            Result r = test->run();
-
-            if (r.status() == Status::SUCCESS) {
+            if (Result r = test->run(); r.status() == Status::SUCCESS) {
                 std::cout << GREEN << "Test " << test->id() << " passed.";
             } else {
                 std::cout << RED << "Test " << test->id() << " has "
