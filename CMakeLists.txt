@@ -11,4 +11,6 @@ add_executable(physics_educational_experiment main.cpp vectors/Vector3.cpp vecto
         vectors/tests/Vector3Test.h
         vectors/Vector2.cpp
         vectors/Vector2.h
+        vectors/tests/Vector2Test.cpp
+        vectors/tests/Vector2Test.h
 )
