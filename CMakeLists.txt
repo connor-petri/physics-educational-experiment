@@ -33,3 +33,6 @@ add_executable(physics_educational_experiment
         vectors/tests/Vector2Test.cpp
         vectors/tests/Vector2Test.h
 )
+
+# Link Libraries
+target_link_libraries(physics_educational_experiment PRIVATE sfml-graphics sfml-window sfml-system)
