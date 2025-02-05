@@ -15,7 +15,6 @@ namespace pee
         explicit Vector3(float x = 0.0, float y = 0.0, float z = 0.0);
         explicit Vector3(int x = 0, int y = 0, int z = 0);
         Vector3(const Vector3 &v);
-        Vector3(float v[3]);
 
         ~Vector3();
 
@@ -23,8 +22,14 @@ namespace pee
 
         // Properties
         float x() const;
+        void x(float x);
+
         float y() const;
+        void y(float y);
+
         virtual float z() const;
+        virtual void z(float z);
+
         float magnitude() const;
         float mag() const { return this->magnitude(); }
 
