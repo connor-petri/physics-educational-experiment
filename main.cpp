@@ -5,27 +5,6 @@
 #include "vectors/tests/Vector2Test.h"
 #include <vector>
 
-#include "vectors/tests/Vector2Test.h"
-
-class AddTest : public peeTest::TestCase {
-public:
-    AddTest(int x, int y, int expected) {
-        this->x = x;
-        this->y = y;
-        this->expected = expected;
-    }
-
-    peeTest::Result run() override {
-        return this->x + this->y == this->expected  ? peeTest::Result(peeTest::Status::SUCCESS)
-                                                    : peeTest::Result(peeTest::Status::FAILURE);
-    }
-
-private:
-    int x;
-    int y;
-    int expected;
-};
-
 int main()
 {
     using peeTest::Vector3Test, peeTest::Vector2Test;
@@ -35,7 +14,4 @@ int main()
     Vector2Test t3(1,1,1,1);
 
     peeTest::PeeTest::runAll();
-
-    Vector2 v(0.0f,0.0f);
-    std::cout << v.toString() << std::endl;
 }

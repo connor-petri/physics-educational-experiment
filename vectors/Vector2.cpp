@@ -28,6 +28,9 @@ namespace pee {
     }
 
     Vector2 Vector2::unitVector() const {
+        if (this->magnitude() == 0.0f) {
+            return Vector2(0.0f, 0.0f);
+        }
         return Vector2(*this->_x / this->mag(), *this->_y / this->mag());
     }
 

@@ -16,7 +16,7 @@ namespace peeTest {
     class Vector2Test : public TestCase {
     public:
         Vector2Test(float x1, float y1, float x2, float y2);
-        ~Vector2Test();
+        ~Vector2Test() override;
 
         Result run() override;
 

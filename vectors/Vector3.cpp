@@ -5,6 +5,7 @@
 #include "Vector3.h"
 #include "../PeeTest/PeeTest.h"
 #include <cmath>
+#include <cfloat>
 
 #define assertEqual peeTest::PeeTest::assertEqual
 
@@ -86,6 +87,10 @@ namespace pee {
     }
 
     Vector3 Vector3::unitVector() const {
+        if (this->magnitude() == 0.0f) {
+            return Vector3(0.0f, 0.0f, 0.0f);
+        }
+
         return Vector3(*this->_x/this->magnitude(),
                        *this->_y/this->magnitude(),
                        *this->_z/this->magnitude());
