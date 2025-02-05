@@ -6,12 +6,23 @@
 
 namespace pee {
 
-    Vector2::Vector2(float x, float y) : Vector3(x, y, 0.0) {}
+    Vector2::Vector2(float x, float y)
+        : Vector3(x, y, 0.0) {}
 
-    Vector2::Vector2(int x, int y) : Vector3(x, y, 0.0) {}
+    Vector2::Vector2(int x, int y)
+        : Vector3(x, y, 0.0) {}
+
+    Vector2::Vector2(const Vector3 &v) {
+        *this->x = v.x();
+        *this->y = v.y();
+    }
 
     float Vector2::z() const {
         return 0.0f;
+    }
+
+    void Vector2::z(float z) {
+        // Left empty on purpose. This is not to be used on Vector2 objects
     }
 
     Vector2 Vector2::unitVector() const {

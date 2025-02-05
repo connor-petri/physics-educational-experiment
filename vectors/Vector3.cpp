@@ -33,12 +33,6 @@ namespace pee {
         *this->_z = v.z();
     }
 
-    Vector3::Vector3(float v[3]) {
-        *this->_x = v[0];
-        *this->_y = v[1];
-        *this->_z = v[2];
-    }
-
     Vector3::~Vector3() {
         delete this->_x;
         delete this->_y;
@@ -54,12 +48,24 @@ namespace pee {
         return *this->_x;
     }
 
+    void Vector3::x(float x) {
+        *this->_x = x;
+    }
+
     float Vector3::y() const {
         return *this->_y;
     }
 
+    void Vector3::y(float y) {
+        *this->_y = y;
+    }
+
     float Vector3::z() const {
         return *this->_z;
+    }
+
+    void Vector3::z(float z) {
+        *this->_z = z;
     }
 
     float Vector3::magnitude() const {
