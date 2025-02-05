@@ -15,6 +15,10 @@ namespace pee {
     Vector2::Vector2(const Vector3 &v)
         : Vector3(v.x(), v.y(), 0.0) {}
 
+    std::string Vector2::toString() const {
+        return "Vector2(" + std::to_string(*this->_x) + ", " + std::to_string(*this->_y) + ")";
+    }
+
     float Vector2::z() const {
         return 0.0f;
     }

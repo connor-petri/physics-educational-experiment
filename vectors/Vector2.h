@@ -17,6 +17,8 @@ namespace pee {
 
         ~Vector2() = default;
 
+        std::string toString() const override;
+
         float z() const override;
         void z(float z) override;
 

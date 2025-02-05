@@ -35,4 +35,7 @@ int main()
     Vector2Test t3(1,1,1,1);
 
     peeTest::PeeTest::runAll();
+
+    Vector2 v(0.0f,0.0f);
+    std::cout << v.toString() << std::endl;
 }
