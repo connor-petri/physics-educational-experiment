@@ -12,10 +12,8 @@ namespace pee {
     Vector2::Vector2(int x, int y)
         : Vector3(x, y, 0.0) {}
 
-    Vector2::Vector2(const Vector3 &v) {
-        *this->x = v.x();
-        *this->y = v.y();
-    }
+    Vector2::Vector2(const Vector3 &v)
+        : Vector3(v.x(), v.y(), 0.0) {}
 
     float Vector2::z() const {
         return 0.0f;
